@@ -27,7 +27,7 @@ function Home() {
             </div>
             <div class="card-footer">
               <a
-                href="#"
+                href="/#"
                 type="button"
                 class="btn btn-primary"
                 data-toggle="modal"

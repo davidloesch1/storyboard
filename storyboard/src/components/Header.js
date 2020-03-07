@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { AuthTokenContext } from "./AuthToken";
 import "../css/App.css";
-let jwtDecode = require("jwt-decode");
-const axios = require("axios")
-
 
 
 class Header extends Component {

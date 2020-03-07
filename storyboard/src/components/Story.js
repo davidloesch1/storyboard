@@ -60,8 +60,8 @@ class Story extends Component {
     let pageTabs = chapters.map((el, i) => (
       <PagesTab num={el} key={i} goTo={this.goToChap} />
     ));
-    let selected = chapterSubmissions.find(x => x.selected == true);
-    let alternates = chapterSubmissions.filter(x => x.selected == false);
+    let selected = chapterSubmissions.find(x => x.selected === true);
+    let alternates = chapterSubmissions.filter(x => x.selected === false);
     console.log(alternates)
     alternates = alternates.map((el, i) => {
       return <SubmissionCard data={el} key={i} />;
@@ -73,7 +73,7 @@ class Story extends Component {
             <h3>This is all that is written</h3>
             <h6>Help write the rest of the story!</h6>
             <a
-              href="#"
+              href="/#"
               type="button"
               class="btn btn-secondary"
               data-toggle="modal"
@@ -92,7 +92,7 @@ class Story extends Component {
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="#"
+                    href="/#"
                     aria-label="Previous"
                     onClick={this.prevChapter}
                   >
@@ -103,7 +103,7 @@ class Story extends Component {
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="#"
+                    href="/#"
                     aria-label="Next"
                     onClick={this.nextChapter}
                   >
@@ -154,7 +154,6 @@ class Story extends Component {
               <div
                 class="tab-pane fade"
                 id="comments"
-                role="commentspanel"
                 aria-labelledby="comments-tab"
               >
                 <CommentCard />
@@ -194,7 +193,7 @@ class Story extends Component {
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="#"
+                    href="/#"
                     aria-label="Previous"
                     onClick={this.prevChapter}
                   >
@@ -205,7 +204,7 @@ class Story extends Component {
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="#"
+                    href="/#"
                     aria-label="Next"
                     onClick={this.nextChapter}
                   >
@@ -256,7 +255,6 @@ class Story extends Component {
               <div
                 class="tab-pane fade"
                 id="comments"
-                role="commentspanel"
                 aria-labelledby="comments-tab"
               >
                 <CommentCard />

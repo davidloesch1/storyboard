@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import StoryCard from "./StoryCard"
-import { AuthTokenContext } from "./AuthToken";
 import { apiURL } from '../url'
 
 import "../css/App.css";

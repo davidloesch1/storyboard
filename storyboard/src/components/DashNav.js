@@ -6,17 +6,17 @@ function DashNav(props) {
     <>
       <ul class="nav flex-column dash-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">
+          <a class="nav-link active" href="/#">
             My Plots
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="/#">
             My Submissions
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="/#">
             My Comments
           </a>
         </li>

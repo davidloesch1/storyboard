@@ -2,7 +2,6 @@ import React from "react";
 import "../css/App.css";
 import Home from "./Home";
 import PlotModalForm from "./PlotModalForm";
-import AddModal from './AddModal'
 import LoginModal from "./LoginModal";
 import SignupModal from "./SignupModal";
 import StoryList from "./StoryList";
