@@ -80,7 +80,7 @@ class StoryDetails extends Component {
           <h1>StoryDetails</h1>
           <br />
           <h2>{this.state.title}</h2>
-          <small>{this.state.user}</small>
+          <small>By: {this.state.user}</small>
           <div class="accordion" id="details-parent">
             <div class="card">
               <div class="card-header" id="heading-details">
