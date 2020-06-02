@@ -7,7 +7,8 @@ class AuthTokenProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      auth_token: null
+      auth_token: null,
+      user_id: null
     };
   }
 
@@ -17,7 +18,8 @@ class AuthTokenProvider extends Component {
       let decoded = jwtDecode(token);
       if (decoded.exp > Date.now().valueOf() / 1000) {
         this.setState({
-          auth_token: token
+          auth_token: token,
+          user_id: decoded.user_id
         });
       }
     } catch (err) {}
@@ -42,6 +44,7 @@ class AuthTokenProvider extends Component {
       <AuthTokenContext.Provider
         value={{
           authToken: this.state.auth_token,
+          user_id: this.state.user_id,
           login: this.login,
           logout: this.logout
         }}

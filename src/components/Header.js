@@ -4,7 +4,12 @@ import "../css/App.css";
 
 
 class Header extends Component {
-
+  constructor(props){
+    super(props);
+    this.state = {
+      user : ""
+    }
+  }
   render() {
     if (this.context.authToken === null) {
       return (
@@ -27,7 +32,7 @@ class Header extends Component {
             </ul>
             <button
               type="button"
-              class="btn btn-light"
+              class="btn btn-light header"
               data-toggle="modal"
               data-target="#login-modal"
             >
@@ -35,7 +40,7 @@ class Header extends Component {
             </button>
             <button
               type="button"
-              class="btn btn-light"
+              class="btn btn-light header"
               data-toggle="modal"
               data-target="#signup-modal"
             >
@@ -45,6 +50,11 @@ class Header extends Component {
         </nav>
       );
     } else {
+      let greeting
+      if(localStorage.getItem.username !== null){
+        let user = localStorage.getItem("username")
+        greeting = <p className="text-white mr-2">Hi {user}</p>
+      }
       return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="/">
@@ -63,6 +73,7 @@ class Header extends Component {
                 </a>
               </li>
             </ul>
+            {greeting}
             <button
               type="button"
               class="btn btn-light"

@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/App.css";
-import Header from "./Header";
 import idea from "../images/idea4.jpg";
 import author from "../images/typewriter-2.jpg";
 import reader from "../images/Bookworm vector 3.jpg";
@@ -8,7 +7,6 @@ import reader from "../images/Bookworm vector 3.jpg";
 function Home() {
   return (
     <div className="home">
-      <Header />
       <div className="center">
         <h1>StoryBoard</h1>
         <h5>Collaborative Storytelling.</h5>

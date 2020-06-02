@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Story from "./Story";
-import Header from "./Header";
 import CharRow from "./CharRow";
 import { AuthTokenContext } from "./AuthToken";
 import "../css/App.css";
@@ -76,7 +75,6 @@ class StoryDetails extends Component {
 
     return (
       <>
-        <Header />
         {/* This is the code for the collapsable menu for details, characters, and plot */}
         <div className="center">
           <h1>StoryDetails</h1>

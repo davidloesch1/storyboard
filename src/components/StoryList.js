@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "./Header";
 import StoryCard from "./StoryCard"
 import { apiURL } from '../url'
 
@@ -33,7 +32,6 @@ class StoryList extends Component {
   render() {
     return (
       <>
-        <Header />
         <div className="center">
           <h1>StoryBoard</h1>
           <h5>Library</h5>
