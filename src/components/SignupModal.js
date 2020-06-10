@@ -22,17 +22,23 @@ class SignupModal extends Component {
       alert("passwords don't match!");
     } else {
       let payload = {
-        username: this.state.username,
-        password: this.state.password,
         email: this.state.email,
-        first: this.state.first,
-        last: this.state.last
+        firstName: this.state.first,
+        lastName: this.state.last,
+        password: this.state.password,
+        username: this.state.username
       };
-      axios.post( apiURL + "user/signup/", payload);
+      console.log(apiURL, payload)
+      axios.post( apiURL + "/users/signup", payload)
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
     }
   };
   handleChange = e => {
-    console.log("ehre");
     this.setState({
       [e.target.name]: e.target.value
     });
